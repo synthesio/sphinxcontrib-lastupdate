@@ -31,5 +31,8 @@ To insert last update modification of current file, use something like::
 History
 =======
 
-0.1
+1.1
+  Update to support all type of files, like markdown.
+
+1.0
   First public release.
