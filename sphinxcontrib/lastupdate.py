@@ -15,7 +15,7 @@ class LastUpdate(SphinxTransform):
     def apply(self):
         for ref in self.document.traverse(nodes.substitution_reference):
             if ref['refname'] == 'lastupdate':
-                statbuf = os.stat('%s.rst' % self.env.docname)
+                statbuf = os.stat(self.document.attributes['source'])
                 mtime = datetime.fromtimestamp(statbuf.st_mtime)
                 # special handling: can also specify a strftime format
                 text = format_date(_('%b %d, %Y'), date=mtime,
