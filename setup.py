@@ -13,7 +13,7 @@ requires = ['Sphinx']
 
 setup(
     name='sphinxcontrib-lastupdate',
-    version='1.0',
+    version='1.1',
     url='https://github.com/synthesio/sphinxcontrib-lastupdate',
     download_url='https://pypi.org/project/sphinxcontrib-lastupdate',
     license='MIT',
